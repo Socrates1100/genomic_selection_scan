@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+./xpclr/__init__.py
+./xpclr/methods.py
+./xpclr/util.py
+bin/xpclr
+xpclr.egg-info/PKG-INFO
+xpclr.egg-info/SOURCES.txt
+xpclr.egg-info/dependency_links.txt
+xpclr.egg-info/top_level.txt
+xpclr.egg-info/scripts/xpclr

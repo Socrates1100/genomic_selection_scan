@@ -1,0 +1,6 @@
+scikit-allel>=1.2
+numpy
+pandas
+scipy
+h5py
+zarr

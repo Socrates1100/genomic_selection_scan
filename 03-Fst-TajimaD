@@ -1,0 +1,16 @@
+#!/bin/bash
+
+## calculate Fst by vcftools
+vcftools --gzvcf example.vcf.gz --maf 0.01 --weir-fst-pop popA --weir-fst-pop popB --fst-window-size 50000 --fst-window-step 25000 --out example.out
+
+## calculate theta_pi by vcftools
+vcftools --gzvcf example.vcf.gz --maf 0.01 --window-pi 50000 --window-pi-step 25000 --out example.out
+
+## calculate Tajima's D by vcftools
+vcftools --gzvcf example.vcf.gz --maf 0.01 --TajimaD 50000 --out example.out
+
+## define the windows with the greatest Fst (top 5%) and the lowest theta pi (bottom 5%) as regions under positive selection
+
+## define the windows with the lowest Tajima's D (bottom 5%) and the lowest theta pi (bottom 5%) as regions under positive selection
+
+## define the windows with the greatest Tajima's D (top 5%) and the greatest theta pi (bottom 5%) as regions under balancing selection
